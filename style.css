@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Italiana', serif;
-
+    font-family: 'Lora', serif;
 }
 
 :root {
-    --beige: #FEFBF6;
+    --beige: rgb(254, 251, 246);
     --rosa: #F6C2AC;
     --rosaclaro: #F9DCD2;
     --tostado: #9F988E;
@@ -26,9 +25,13 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--beige);
+    position: fixed;
+    top: 0;
+    z-index:2;
 }
+
 .logo {
-    height: 80px;
+    height: 70px;
 }
 
 .navbar {
@@ -43,5 +46,93 @@ header {
     text-decoration: none;
 }
 
+.navbar li:first-child a {
+    font-weight: 700;
+}
 
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#portada{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 200px;
+    gap: 70px;
+
+}
+
+#portada img{
+    display: flex;
+    max-height: 500px;
+}
+
+.portada-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 20px;
+    max-width: 50%;
+}
+
+.portada-text h1{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 70px;
+    color: var(--verde);
+}
+
+.portada-text p {
+    color: var(--tostado);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.portada-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.portada-text a {
+    text-decoration: none;
+    background-color: var(--rosaclaro);
+    padding: 10px 35px;
+    color: var(--verde);
+    border-radius: 10px;
+    border-color: var(--verde);
+    border-style: solid;
+    border-width: 2px;
+    font-size: 14px;
+}
+
+.portada-buttons a:first-child  {
+    border: none;
+    background-color: var(--verde);
+    color: var(--rosaclaro);
+}
+
+#description{
+    background-color: var(--beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px;
+
+}
+
+#description p {
+    max-width: 600px;
+    text-align: center;
+    color: var(--tostado);
+    font-size: 15px;
+    font-style: italic;
+    line-height: 150%;
+}
