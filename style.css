@@ -50,6 +50,12 @@ header {
     font-weight: 700;
 }
 
+.cart-icon {
+    height: 25px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
 .main{
     width: 100%;
     display: flex;
