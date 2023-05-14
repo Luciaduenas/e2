@@ -16,13 +16,24 @@
     <header>
         <img class="logo" src="assets/SVG/Recurso 2.svg" alt="Logo Love Peonies">
        <nav>
-        <ul class="navbar">
+        <label for="menu-toggle" class="menu-label">
+            <img src="assets/SVG/Recurso 4.svg" alt="menu" class="menu-icon">
+        </label>
+        <input type="checkbox" id="menu-toggle">    
+        <ul class="navbar-list">
             <li class="nav_link"><a href="#">Home</a></li>
             <li class="nav_link"><a href="#"> Products</a></li>
             <li class="nav_link"><a href="#">About</a></li>
             <li class="nav_link"><a href="#">Contact</a></li>
-            <img class="cart-icon" src="assets/Imagenes/Carrito.svg" alt="Carrito">
         </ul>
+        <div class="cart">
+            <img class="cart-icon" src="assets/Imagenes/Carrito.svg" alt="Carrito">
+        </div>
+
+        <label for="cart-toggle" class="cart-label">
+            <img class="cart-label" src="assets/Imagenes/Carrito.svg" alt="Carrito">
+         </label>
+       <input type="checkbox" id="cart-toggle">
    
     </nav> 
     </header>
@@ -30,7 +41,8 @@
     <main>
         <section id="portada">
             <div class="portada-text">
-                <H1>Nature is a gift</H1>
+                <H1>Nature <span>is a gift</span></H1>
+                
                 <p>Love Peonies is a zero-waste, plastic-free, vegan, and cruelty-free skincare brand with a deep love for the planet.</p>
                 <div class="portada-buttons">
                     <a href="#">Our Products</a>
@@ -42,6 +54,66 @@
         <section id="description">
             <p>Love Peonies is the future of sustainable and ethical self-care. We harness the power of raw, organic, plant-based ingredients to create luxury skincare, while offering a plastic free alternative to mainstream brands. We are a small, Australia based, women led team. Our owner and founder Lucile Wild is a practicing herbalist and uses her knowledge and expertise to guide all parts of our production process.</p>
         </section>
+        <section id="cards">
+            <div class="card-titulo">
+                 <h2>Zero waste skincare</h2>
+                  <p>Love Peonies is taking action for a more sustainable future.</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                   <img src="assets/Imagenes/Landing/cards/SVG/Recurso 4.svg" alt="refill logo">
+                    <h3>Verified Sustainability</h3>
+                    <p>Love Peonies has met ethy’s standards for verified sustainability claims. By achieving ethy certification, helping consumers make informed decisions.</p>
+                 </div>
+                 <div class="card">
+                    <img src="assets/Imagenes/Landing/cards/SVG/Recurso 3.svg" alt="refill logo">
+                   <h3>Small batched</h3>
+                   <p>We handmake our organic skincare in small batches, using fresh and local ingredients. we ensure all of our ingredients are sourced ethically.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/Imagenes/Landing/cards/SVG/Recurso 1.svg" alt="refill logo">
+                    <h3>Refill system</h3>
+                    <p>We operate on a circular refill system, where you can return your used jars and bottles to us to be sterilised and refilled, for a discount on your next purchase.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-text">
+                <h2 class="contact-title">Contact Us</h2>
+                <div class="contact-stores-container">
+                    <div class="store">
+                            <h3 class="store-title">Sydney, AUS</h3>
+                            <ul class="store-data">
+                                <li><img src="assets/Imagenes/Landing/Contact/SVG/location.svg" alt="location icon"> <p>Wolli Creek NSW 2205</p></li>
+                                <li><img src="assets/Imagenes/Landing/Contact/SVG/mail.svg" alt="mail icon"> <p>sydneystore@lovepeonies.com</p></li>
+                                <li><img src="assets/Imagenes/Landing/Contact/SVG/phone.svg" alt="phone icon"><p>+61 404 555 550</p></li>
+                            </ul>
+                        </div>
+                     <div class="store">    
+                         <h3 class="store-title">London, UK</h3>
+                          <ul class="store-data">
+                            <li><img src="assets/Imagenes/Landing/Contact/SVG/location.svg" alt="location icon"> <p>121 Bellenden Rd</p></li>
+                            <li><img src="assets/Imagenes/Landing/Contact/SVG/mail.svg" alt="mail icon"> <p>londonstore@lovepeonies.com</p></li>
+                            <li><img src="assets/Imagenes/Landing/Contact/SVG/phone.svg" alt="phone icon"><p>+44 121 448 8440</p></li>
+                         </ul>
+                     </div>
+               </div>
+                <div class="socialmedia">
+                        <a target="_blank" href="#"><img src="assets/Imagenes/Landing/Contact/SVG/twitter.svg" alt="twitter"></a>
+                        <a href="#"><img src="assets/Imagenes/Landing/Contact/SVG/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="assets/Imagenes/Landing/Contact/SVG/facebook.svg" alt="facebook"></a>
+                 </div>
+
+              </div>  
+
+           
+            <img class="map" src="assets/Imagenes/Landing/Contact/map.png" alt="map">
+
+        </section>
+        <footer> 
+            <img src="assets/Imagenes/Landing/logo trama.svg" alt="logo Trama">
+            <h3>© 2023, Created with Love by Trama Print Studio</h3>
+        </footer>
     </main>
     
 </body>
