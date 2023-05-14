@@ -143,17 +143,18 @@ main{
 }
 
 #description{
+    width: 100%;
     background-color: var(--beige);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 60px 100px;
+    padding: 60px 0;
 
 }
 
 #description p {
-    max-width: 600px;
+    max-width: 60%;
     text-align: center;
     color: var(--tostado);
     font-size: 15px;
@@ -227,7 +228,7 @@ main{
 #contact {
     background-color: rgba(255, 255, 255, 0.70);
     width: 100%;
-    padding: 80px 80px 80px 80px;
+    padding: 80px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
