@@ -479,7 +479,9 @@ footer img{
     
     }
 
-    
+    #cards p{
+        padding: 0 60px;
+    }
 
     
     .card {
