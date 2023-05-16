@@ -138,10 +138,23 @@ main{
     color: var(--rosaclaro);
 }
 
+@keyframes scale {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .portada-text a:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-width: px;
+    animation: scale 1s step-start;
 }
+
+
 
 #description{
     width: 100%;
@@ -184,6 +197,7 @@ main{
     color: var(--tostado);
     font-size: 15px;
     font-style: italic;
+    max-height: 60%;
 }
 
 .card-container {
@@ -213,7 +227,7 @@ main{
 .card h3{
     color: var(--rosa);
     font-weight: 800;
-    text-overflow: clip;
+    text-align: center;
 }
 
 .card p {
@@ -393,7 +407,24 @@ footer img{
         width: 25px;
     }
 
-  
+    #cards {
+        padding: 60px ;
+    }
+
+    #cards h2{
+        font-size: 45px;
+        color: var(--verde);
+        text-align: center;
+    }
+    
+    #cards p{
+        text-align: center;
+        color: var(--tostado);
+        font-size: 15px;
+        font-style: italic;
+    }
+
+   
 
     .card-container {
         display: flex;
@@ -448,27 +479,11 @@ footer img{
     
     }
 
-    #card p{
-        display: none;
-    }
     
-    .card-container {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        
-    }
+
     
     .card {
-        background-color: rgba(255, 255, 255, 0.70);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        height: 130px;
-        width: 250px;
-        border-radius: 10px;
-        padding: 20px;
+        width: 80%;
     }
 
     #contact {
@@ -476,7 +491,7 @@ footer img{
     }
     
     .map {
-       display: none;
+       max-width: 250px;
     }
     
     .contact-text{
